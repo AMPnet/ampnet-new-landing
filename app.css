@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     padding-bottom: 100px;
+    background: #f8fffd;
 }
 
 .hero-root {
@@ -9,6 +10,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -110px;
 }
 
 @media(min-width: 800px) {
@@ -63,6 +65,7 @@ body {
         margin-left: 4em;
         margin-right: 4em;
         margin-top: 2em;
+       
     }
 }
 
@@ -73,7 +76,7 @@ body {
 
 .features-title {
     color: #575757;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .features-root {
@@ -95,7 +98,10 @@ body {
     height: 500px;
     float: right;
     position: absolute;
+    object-fit: contain;
+    top: -100px;
     right: -100px;
+    width: 100%;
 }
 
 @media(max-width: 800px) {
@@ -143,4 +149,36 @@ body {
 
 h3 {
     color: #575757;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.phone-mock {
+    background: url("/assets/mock-phone.png");
+    height: 100px;
+    object-fit: contain;
+}
+
+.mac-mock {
+    background: url("/assets/mock-laptop.png");
+}
+
+.bg-content {
+    background: url("/assets/bg-content.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.bubbles-bg {
+    background: url("/assets/bubbles-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
 }
