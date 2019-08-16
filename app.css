@@ -43,7 +43,7 @@ body {
 }
 
 .hero-text {
-    font-size: 55px;
+    font-size: 40px;
     color: #676565;
     line-height: 1.1em;
     font-weight: 700;
@@ -56,7 +56,7 @@ body {
 .hero-explainer {
     color: #686868;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 17px;
     padding-right: 40px;
 }
 
@@ -91,7 +91,7 @@ body {
 
 .feature-content {
     color: #575757;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .feature-graphic {
@@ -181,4 +181,25 @@ h3 {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
+}
+
+.btn-primary {
+    background: #88c632;
+    border: none;
+}
+
+.root-quote {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.quote-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.chm {
+    background: #88c632;
+    color: #fff;
 }
