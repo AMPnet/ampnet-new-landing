@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.hero-root {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(min-width: 800px) {
+    #main-image-bg {
+        position: absolute;
+        width: 100vw;
+    }
+}
+
+
+@media(max-width: 800px) {
+    .hero-root {
+        height: 100%;
+    }
+
+    .hero-txt-margin {
+        margin-top: 200px;
+    }
+
+    #main-image-bg {
+        position: absolute;
+        height: 100%;
+    }
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+    color: #6b6c6d;
+}
+
+.hero-text {
+    font-size: 55px;
+    color: #676565;
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+.hero-txt-margin {
+    margin-top: 15%;
+}
+
+.hero-explainer {
+    color: #686868;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+@media(min-width: 800px) {
+    .navbar {
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 2em;
+    }
+}
+
+
+.hero-image {
+    margin-top: 12%;
+}
+
+.features-title {
+    color: #575757;
+    font-size: 50px;
+}
+
+.features-root {
+    margin-top: 100px;
+}
+
+.feature-title {
+    color: #575757;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.feature-content {
+    color: #575757;
+    font-size: 17px;
+}
+
+.feature-graphic {
+    height: 500px;
+    float: right;
+    position: absolute;
+    right: -100px;
+}
+
+@media(max-width: 800px) {
+    .feature-graphic-left {
+        display: none;
+    }
+
+    .feature-graphic {
+        display: none;
+    }
+
+    .why-text {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.feature-graphic-left {
+    height: 500px;
+    float: right;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+
+.feature-bg {
+    background: url("/assets/retail-bg.png");
+    background-size: cover;
+}
+
+.why-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    color: #575757;
+}
+
+.why-content {
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #575757;
+}
