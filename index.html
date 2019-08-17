@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AMPnet | Power for the people. Powered by the people.</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./app.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=latin-ext"
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./app.js"></script>
 </head>
 
 <body>
 
-    <nav class="my-navbar navbar navbar-light navbar-expand-lg">
+    <nav class="my-navbar navbar navbar-light navbar-expand-lg nav-bg">
         <a class="navbar-brand">
             <div>
                 <img src="/assets/logo-amp.png" height="50px" alt="">
@@ -30,19 +35,24 @@
         <div class="collapse navbar-collapse" id="navbar-dropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#why" class="nav-link">Why AMPnet?</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#why" class="nav-link">Why AMPnet?</a>
+                    <a href="#clients" class="nav-link">Our Clients</a>
                 </li>
                 <li class="nav-item">
                     <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://blog.ampnet.io" class="btn btn-outline-info font-weight-bold px-5">
+                        Blog
+                    </a>
                 </li>
             </ul>
         </div>
@@ -62,20 +72,17 @@
                     <div class="hero-explainer">
                         Kickstart you energy cooperative with
                         AMPnet. A whitelabel, all-in-one platform
-                            for running energy cooperatives and energy
-                            communities.
+                        for running energy cooperatives and energy
+                        communities.
                         <br>
                         <br>
                         Are you a memeber of an energy coop or looking to start
                         one in your area?
                     </div>
-                    <div class="input-group mt-3">
-                        <input class="form-control" placeholder="Enter your email">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-info">
-                                Request a quote
-                            </button>
-                        </div>
+                    <div class=" mt-3">
+                        <a href="http://eepurl.com/gADhoL" class="btn btn-outline-info w-100 py-3 font-weight-bold">
+                            Request a quote
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-7 hero-image">
@@ -85,24 +92,43 @@
         </div>
     </div>
 
-    <div id="features" class="features-root text-center">
-        <!-- <h3 class="font-weight-bold mt-3">
-            Why AMPnet?
+    <div id="why" class="features-root text-center">
+        <h3 class="font-weight-bold mt-3">
+            With AMPnet, your cooperative saves money
         </h3>
         <div class="why-text w-100">
-            <div class="why-content">
-                AMPnet is the easiest way for a group of people to start earning money
-                by producing power from renewable energy sources. <br> <br>
-                With AMPnet, a community can start their own electric utility and avoid the
-                hassle of negotiating terms for the sales of electricity with large utility
-                companies.
-            </div>
-        </div> -->
+            <ul class="list-group why-holder mt-3">
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Automate project funding. Access social media marketing and sharing tools.
+                </li>
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Automate billing and transactions. 
+                </li>
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Access a global coopeartives market and exchange. Powered by blockchain.
+                </li>
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Offload development of electricity management systems.
+                </li>
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Ensure tax and legal compliance for investors.
+                </li>
+                <li class="list-group-item">
+                    <img class="mr-3" src="/assets/icons/checked.svg" height="25px" alt="">
+                    Offer one-click investment traceability and reporting tools to your members.
+                </li>
+            </ul>
+        </div>
 
-        <div class="container">
-            <div class="row bubbles-bg">
+        <div class="container mt-5">
+            <div id="clients" class="row bubbles-bg">
 
-                <div class="col-md-12">
+                <div class="col-md-12 mt-5">
                     <h3 class="font-weight-bold mb-5">Trusted by our clients</h3>
                 </div>
 
@@ -124,21 +150,21 @@
         </div>
 
         <div class="container">
-            <div class="row mt-5">
+            <div id="features" class="row mt-5">
 
                 <div class="col-md-12 mt-5"></div>
                 <div class="col-md-6 text-justify">
                     <div class="feature-title mb-3">Investment platform</div>
                     <div class="feature-content">
                         AMPnet Crowdinvestment platform enables any energy community
-                        to run crowdfunding campaigns under their own brand. 
+                        to run crowdfunding campaigns under their own brand.
                         <br><br>
                         After a project has been funded, AMPnet takes care that all the investors
-                        recieve their money when the project makes money. We take care of 
-                        deploying the money to the users bank account, issuing investment 
+                        recieve their money when the project makes money. We take care of
+                        deploying the money to the users bank account, issuing investment
                         statements and keeping full records of investments for tax purposes.
                         <br><br>
-                        Our clients can also opt-in to a global exchange where all clients 
+                        Our clients can also opt-in to a global exchange where all clients
                         can freely trade project shares - making renewable energy an even better
                         investment proposition.
                     </div>
@@ -159,14 +185,22 @@
                     <!-- <img  height="450" src="/assets/mock-phone.png" alt=""> -->
                 </div>
 
-                <div class="col-md-12 mt-5"></div>
+                <div class="col-md-12 mt-4"></div>
 
                 <div class="col-md-12 mt-5">
                     <h3>Interested?</h3>
-                    <button class="btn btn-primary px-5 py-3 mt-3">
-                        Request a quote
-                    </button>
                 </div>
+
+                <div class="col-md-2"></div>
+                <div class="col-md-4 mt-3">
+                    <a href="http://eepurl.com/gADhoL" class="btn btn-outline-info py-3 w-100">Request a quote</a>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <a href="https://demo.ampnet.io" class="btn btn-outline-info py-3 w-100">
+                        Try a demo
+                    </a>
+                </div>
+                <div class="col-md-2"></div>
 
                 <div class="col-md-12 mt-5"></div>
                 <div class="col-md-12 mt-5"></div>
@@ -181,7 +215,7 @@
 
                     <div class="feature-title mb-3">Retail energy platform</div>
                     <div class="feature-content bubbles-bg">
-                        Issue bills, track consumption and manage subscribers of your electric 
+                        Issue bills, track consumption and manage subscribers of your electric
                         utility with AMPnet Retail electricity platform. <br> <br>
                         Compete on a level technological playingfield with large utilities.
                         <br><br>
@@ -200,9 +234,9 @@
                     <div class="feature-title mb-3">Electricity exchange</div>
                     <div class="feature-content bg-content">
                         Automatically sell excess electricity on regulated electricity exchanges. <br>
-                        Leverage AMPnet licensed brokers to hande electricity trading for you and 
+                        Leverage AMPnet licensed brokers to hande electricity trading for you and
                         your customers. <br><br>
-                        Join consortiums with other AMPnet clients and trade as a large producer - 
+                        Join consortiums with other AMPnet clients and trade as a large producer -
                         leveraging production amounts for better deals.
                     </div>
                 </div>
@@ -218,24 +252,24 @@
                     </div>
                     <img src="/assets/blockchain-graphic.png" height="300px" alt="">
                     <p class="mt-5 ml-5 mr-5">
-                        Powered by Æternity Blockchain platform, AMPnet enables all of its clients 
+                        Powered by Æternity Blockchain platform, AMPnet enables all of its clients
                         to cooperate together through a mutual blockchain platform. <br><br>
-                        This enables each cooperative to run business fully independently while 
+                        This enables each cooperative to run business fully independently while
                         retaining effortless transactions with partner coops. The blockchain
-                        platform enables a common currency system for all cooperatives based on 
-                        the Euro. 
+                        platform enables a common currency system for all cooperatives based on
+                        the Euro.
                     </p>
                 </div>
 
-                <div class="col-md-12 mt-5"></div>
+                <div id="pricing" class="col-md-12 mt-5"></div>
 
 
-                <div class="col-md-12 mt-5 mb-5">
-                    <h3>Pricing</h3>
+                <div class="col-md-12 mt-5 mb-3">
+                    <h3 class="font-weight-bold">Pricing</h3>
                     <h6><i>AMPnet offers transparent and scalable pricing</i></h6>
                 </div>
 
-                <div class="col-md-4 mt-3">
+                <div class="col-md-6 mt-3">
                     <div class="card">
                         <div class="card-header chm">
                             <div class="card-title">
@@ -244,15 +278,16 @@
                         </div>
                         <div class="card-body">
                             <div>
-                                <h5>$2/user/mo</h5>
-                                <h6><i>or</i></h6>
-                                <h5>1%-5% of sucessfully funded projects</h5>
+                                <h3>1% - 3.5%</h3>
+                                <h6>
+                                    <i>per sucessfully funded project</i>
+                                </h6>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 mt-3">
+                <div class="col-md-6 mt-3">
                     <div class="card h-100">
                         <div class="card-header chm">
                             <h6 class="font-weight-bold">
@@ -261,59 +296,97 @@
                         </div>
                         <div class="card-body d-flex justify-content-center flex-column">
                             <div>
-                                <h5>$2/user/mo</h5>
+                                <h3>$2.5</h3>
+                                <h6>
+                                    <i>per user per month</i>
+                                </h6>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 mt-3">
-                    <div class="card h-100">
-                        <div class="card-header chm">
-                            <h6 class="font-weight-bold">
-                                Full platform
-                            </h6>
-                        </div>
-                        <div class="card-body d-flex justify-content-center flex-column">
-                            <div>
-                                <h5>$3/user/mo</h5>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 mt-3">
+                    <i>
+                        All prices are subject to volume discounts. </i>
                 </div>
 
-                <div class="col-md-12 mt-5">
-                    <i>All prices are subject to volume discounts</i>
-                </div>
-
-                <div class="col-md-12">
-                    <button class="btn btn-primary px-5 py-3 mt-3">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 mt-3 mb-3">
+                    <a href="http://eepurl.com/gADhoL" class="btn btn-outline-info w-100 py-3">
                         Request a quote
-                    </button>
+                    </a>
                 </div>
-
-                <div class="col-md-12 mt-5 mb-5"></div>
+                <div class="col-md-3"></div>
 
                 <div class="col-md-12 mt-5">
-                    <h3 class="font-weight-bold">Contact us</h3>
-                    <img src="/assets/contact-us.png" height="300px" class="mt-5" alt="">
-                    <div class="mt-5">
-                        <h5>info@ampnet.io</h5>
+                    <i>
+                        We offer hosting and platform maintenance services to all our clients. <br>
+                        <a href="http://eepurl.com/gADhoL">request a quote</a> to get a customized offer.
+
+                    </i>
+                </div>
+
+                <div id="contact" class="col-md-12 mt-5">
+                    <h3 class="font-weight-bold mb-5 mt-5">Contact us</h3>
+                    <i>For all inquiries, including sales quotes - contact us at</i>
+                    <div class="mt-3">
+                        <h6>info@ampnet.io</h6>
                     </div>
+                    <img src="/assets/contact-us.png" height="300px" class="mt-5" alt="">
+
                 </div>
 
                 <div class="col-md-12 mt-5 mb-5"></div>
-                <div class="col-md-12 mt-5 mb-5"></div>
 
-                <div class="col-md-12 mt-5">
-                    <p class="text-center w-1000">
-                        (C) Copyright, AMPnet IO Ltd. 2019. All rights reserved.
-                    </p>
-                </div>
+
+
+
             </div>
         </div>
     </div>
 
 </body>
+
+<footer class="page-footer font-small pt-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <div><img src="/assets/logo-amp.png" height="50px" alt="">
+                    </div>
+                <div class="mt-3">
+                    <div style="font-size: 13px;">info@ampnet.io</div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h5>About us</h5>
+                <div class="footer-item-holder">
+                    <div>AMPnet IO d.o.o.</div>
+                    <div>Savska Cesta 32, 10000 Zagreb</div>
+                    <div>OIB: 39950924930</div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h5>Social media</h5>
+                <div class="mt-3 social-media-holder">
+                    <img src="/assets/icons/001-facebook.svg" alt="">
+                    <img src="/assets/icons/002-instagram-logo.svg" class="ml-2" alt="">
+                    <img src="/assets/icons/003-twitter-logo-button.svg" class="ml-2" alt="">
+                    <img src="/assets/icons/004-linkedin-logo-button.svg" class="ml-2" alt="">
+                </div>
+            </div>
+
+            <div style="margin-top: 150px;" class="col-md-12 footer-item-holder text-center">
+                <div>
+                    Copyright AMPnet IO d.o.o. 2019. - All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+    data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script
+    type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us3.list-manage.com", "uuid": "e8e7c8e2886906bbc86c0a537", "lid": "feb8fceccb", "uniqueMethods": true }) })</script>
 
 </html>
