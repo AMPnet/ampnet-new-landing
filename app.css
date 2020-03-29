@@ -1,5 +1,5 @@
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Archivo', sans-serif;
 
 
     background: #f8fffd;
@@ -7,7 +7,6 @@ body {
 
 .hero-root {
     width: 100vw;
-    height: 100vh;
     margin-top: -110px;
     max-width: 100%;
 }
@@ -21,6 +20,13 @@ body {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-primary {
+    border-radius: 50px;
+}
 
 @media(max-width: 800px) {
     .hero-root {
@@ -76,13 +82,13 @@ body {
 .navbar-nav > li{
     padding-left: 8px;
     padding-right: 8px;
-    font-weight: normal;
+    font-weight: 300;
     color: #333;
 }
 
 .hero-text {
     font-size: 40px;
-    color: #333;
+    color: #000;
     line-height: 1.1em;
     font-weight: 700;
 }
@@ -98,7 +104,7 @@ body {
 }
 
 .hero-explainer {
-    color: #333;
+    color: #444;
     margin-top: 20px;
     font-size: 17px;
     padding-right: 40px;
@@ -208,7 +214,7 @@ h3 {
 }
 
 .nav-link {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .navbar {
@@ -240,7 +246,7 @@ h3 {
 }
 
 .btn-primary {
-    background: #88c632;
+    background: linear-gradient(to right, #FF60D2, #FF3737);
     border: none;
 }
 
