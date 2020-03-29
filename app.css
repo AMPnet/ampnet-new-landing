@@ -1,5 +1,7 @@
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Overpass', sans-serif;
+
+
     background: #f8fffd;
 }
 
@@ -75,12 +77,12 @@ body {
     padding-left: 8px;
     padding-right: 8px;
     font-weight: normal;
-    color: #6b6c6d;
+    color: #333;
 }
 
 .hero-text {
     font-size: 40px;
-    color: #676565;
+    color: #333;
     line-height: 1.1em;
     font-weight: 700;
 }
@@ -96,7 +98,7 @@ body {
 }
 
 .hero-explainer {
-    color: #686868;
+    color: #333;
     margin-top: 20px;
     font-size: 17px;
     padding-right: 40px;
@@ -125,11 +127,11 @@ body {
 
 .hero-image {
     margin-top: 12%;
-    background: url("./assets/hero-fg.png");
+    background: url("./assets/genervestscreen.png");
 }
 
 .features-title {
-    color: #575757;
+    color: #333;
     font-size: 35px;
 }
 
@@ -138,13 +140,13 @@ body {
 }
 
 .feature-title {
-    color: #575757;
+    color: #333;
     font-size: 34px;
     font-weight: bold;
 }
 
 .feature-content {
-    color: #575757;
+    color: #333;
     font-size: 16px;
 }
 
