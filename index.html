@@ -12,6 +12,15 @@
         gtag('config', 'UA-134426038-2');
     </script>
 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_et2BCMCrdB3qcDtULnKTv");
+   })();
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -50,11 +59,11 @@
                 <img src="/assets/logo-amp.png" height="50px" alt="">
             </div>
         </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="navbar-dropdown">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-dropdown">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-dropdown">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto main-menu">
                 <li class="nav-item">
                     <a href="#why" class="nav-link">Why AMPnet?</a>
                 </li>
@@ -95,7 +104,7 @@
                        
                     </div>
                     <div class=" mt-5">
-                        <a href="http://eepurl.com/gADhoL" class="btn btn-primary w-100 py-3 font-weight-bold">
+                        <a href="#contact" class="btn btn-primary w-100 py-3 font-weight-bold">
                             Request a quote
                         </a>
                     </div>
@@ -170,7 +179,7 @@
 
                 <div class="col-md-3"></div>
                 <div class="col-md-3 mt-3">
-                    <a href="http://eepurl.com/gADhoL" class="btn btn-outline-info py-3 w-100">Request a quote</a>
+                    <a href="#contact" class="btn btn-outline-info py-3 w-100">Request a quote</a>
                 </div>
                 <div class="col-md-3 mt-3">
                     <a href="" class="btn btn-outline-info py-3 w-100">
@@ -335,7 +344,7 @@
                 <div class="col-md-12 mt-5">
                     <i>
                         We offer hosting and platform maintenance services to all our clients. <br>
-                        <a href="http://eepurl.com/gADhoL">request a quote</a> to get a customized offer.
+                        <a href="#contact-form">request a quote</a> to get a customized offer.
 
                     </i>
                 </div>
@@ -346,8 +355,35 @@
                     <div class="mt-3">
                         <h6>info@ampnet.io</h6>
                     </div>
-                    <img id="contact-graphic" src="/assets/contact-us.png" height="300px" class="mt-5" alt="">
+                    <div class="mt-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Fill out this form and we'll get back to you within two business days!
+                                </div>
+                            </div>
+                                <form id="contact-form" method="POST">
+                                    <div class="card-body">
 
+                                    <div class="form-group">
+                                        <input placeholder="First name" required type="text" name="firstname" class="form-control mb-3">
+                                        <input placeholder="Last name" required type="text" name="lastname" class="form-control mb-3">
+                                        <input placeholder="Company name (optional)" type="text" name="company" class="form-control mb-3">
+                                        <input placeholder="Contact email" required type="text" name="email" class="form-control mb-3">
+                                        <textarea placeholder="Short message (optional)" class="form-control" name="content" rows="10"></textarea>
+                                    </div>
+                                     
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    </div>
+
+                                </form>
+                            
+                        </div> 
+                        
+                    </div>
+                    <img id="contact-graphic" src="/assets/contact-us.png" height="300px" class="mt-5" alt="">
                 </div>
 
                 <div class="col-md-12 mt-5 mb-5"></div>
